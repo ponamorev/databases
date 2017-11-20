@@ -1,11 +1,10 @@
-/*CREATE TABLE avg_salary (
+CREATE TABLE avg_salary (
   id_company INT,
   name_company VARCHAR(100),
   id_project INT,
   cost INT,
-  avg_sal INT,
-  PRIMARY KEY (id_project)
-);*/
+  avg_sal INT
+);
 
 INSERT INTO avg_salary (id_company, id_project, cost)
     SELECT companies_projects.id_company, companies_projects.id_project, projects.cost
